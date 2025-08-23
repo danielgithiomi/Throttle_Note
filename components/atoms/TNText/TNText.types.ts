@@ -1,5 +1,5 @@
 import {ReactNode} from "react";
 
-export interface StyledTextProps {
+export interface TNTextProps {
     children: ReactNode;
 }

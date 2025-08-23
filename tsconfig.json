@@ -5,8 +5,18 @@
     "baseUrl": "./",
     "paths": {
       "@/*": ["./*"],
-      "@/libs": ["./packages/libs"],
-      "@/libs/*": ["./packages/libs/*"]
+      "@tn/libs": [
+        "./packages/libs"
+      ],
+      "@tn/components": [
+        "./components"
+      ],
+      "@tn/atoms": [
+        "./components/atoms"
+      ],
+      "@tn/molecules": [
+        "./components/molecules"
+      ]
     }
   },
   "include": [

@@ -10,7 +10,10 @@ module.exports = function (api) {
                 extensions: ['.ts', '.tsx', '.js', '.jsx', '.json'],
                 alias: {
                     '@': './',
-                    '@/libs': './packages/libs'
+                    '@tn/libs': './packages/libs/*',
+                    '@tn/components': './components/*',
+                    '@tn/atoms': './components/atoms/*',
+                    '@tn/molecules': './components/molecules/*',
                 }
             }]
         ]
