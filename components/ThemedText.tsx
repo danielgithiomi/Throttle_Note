@@ -1,6 +1,5 @@
 import { StyleSheet, Text, type TextProps } from 'react-native';
 import { useThemeColor } from '@/hooks/useThemeColor';
-import { libs } from '@/packages/libs/tailwindUtils';
 
 export type ThemedTextProps = TextProps & {
   lightColor?: string;
@@ -13,11 +12,10 @@ export function ThemedText({
   lightColor,
   darkColor,
   type = 'default',
+    className,
   ...rest
 }: ThemedTextProps) {
   const color = useThemeColor({ light: lightColor, dark: darkColor }, 'text');
-
-  console.log(libs);
 
   return (
     <Text
@@ -30,6 +28,7 @@ export function ThemedText({
         type === 'link' ? styles.link : undefined,
         style,
       ]}
+      className={className}
       {...rest}
     />
   );
