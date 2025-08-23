@@ -19,7 +19,7 @@ export default function HomeScreen() {
       }
     >
       <ThemedView style={styles.titleContainer}>
-        <TNText variant="title">
+        <TNText variant="link" className="text-3xl">
           Welcome!
         </TNText>
         <HelloWave />
