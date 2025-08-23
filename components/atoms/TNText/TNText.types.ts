@@ -1,6 +1,6 @@
 import { ReactNode } from "react";
 import { Colors } from "@constants";
-import { DimensionValue, TextProps, TextStyle } from "react-native";
+import { TextProps } from "react-native";
 
 export type TNTextVariants =
     | "default"
@@ -8,6 +8,7 @@ export type TNTextVariants =
     | "subtitle"
     | "caption"
     | "link";
+    
 interface TextColor {
     both: string;
     dark?: keyof typeof Colors.dark;
