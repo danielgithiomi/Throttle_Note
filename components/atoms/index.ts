@@ -1,1 +1,2 @@
-export * from './TNText';
+export * from "./TNText";
+export * from "./TNButton";
