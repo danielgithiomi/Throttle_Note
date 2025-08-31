@@ -1,8 +1,6 @@
 {
   "name": "throttlenote",
-  "main": process.env.STORYBOOK_ENABLED
-      ? "index.storybook.js"
-      : "node_modules/expo/AppEntry.js",
+  "main": "./expo/Entry.ts",
   "version": "1.0.0",
   "scripts": {
     "lint": "expo lint",
