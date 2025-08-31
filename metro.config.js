@@ -1,6 +1,12 @@
+// Learn more https://docs.expo.io/guides/customizing-metro
 const { getDefaultConfig } = require("expo/metro-config");
-const { withNativeWind } = require('nativewind/metro');
 
-const config = getDefaultConfig(__dirname)
+/** @type {import('expo/metro-config').MetroConfig} */
+const config = getDefaultConfig(__dirname);
 
-module.exports = withNativeWind(config, { input: './global.css' })
+console.log("Process enabled as", process.env.EXPO_PUBLIC_STORYBOOK);
+
+if (process.env.EXPO_PUBLIC_STORYBOOK)
+  config.resolver.resolverMainFields.unshift("sbmodern");
+
+module.exports = config;
