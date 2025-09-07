@@ -56,6 +56,8 @@
     "@react-native-community/slider": "4.5.6",
     "@storybook/addon-ondevice-actions": "^9.1.1",
     "@storybook/addon-ondevice-controls": "^9.1.1",
+    "@storybook/addon-ondevice-backgrounds": "^9.1.1",
+    "@storybook/addon-ondevice-notes": "^9.1.1",
     "@storybook/react-native": "^9.1.1",
     "@types/react": "~19.0.10",
     "babel-loader": "^9.1.3",
