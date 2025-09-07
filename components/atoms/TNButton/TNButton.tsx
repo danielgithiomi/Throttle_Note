@@ -1,10 +1,9 @@
 import {FC} from "react";
-import {ButtonPadding, ButtonRounded, ButtonVariant, ContentPosition,} from "@/components";
-import {TNButtonProps} from "@tn/atoms/TNButton";
-import {Text, TouchableOpacity} from "react-native";
+import {Colors} from "@/constants";
 import {cn} from "@/packages/libs";
 import {useAppTheme} from "@tn/hooks/useAppTheme";
-import {Colors} from "@/constants";
+import {Text, TouchableOpacity} from "react-native";
+import {ButtonPadding, ButtonRounded, ButtonVariant, ContentPosition, TNButtonProps} from "@tn/atoms/TNButton";
 
 export const TNButton: FC<TNButtonProps> = ({
                                                 id,
