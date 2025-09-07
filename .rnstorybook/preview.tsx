@@ -1,7 +1,7 @@
 import {View} from "react-native";
 import {Colors} from "@/constants/Colors";
-import {useColorScheme} from "@/hooks/useColorScheme";
 import type {Preview} from '@storybook/react-native';
+import {useColorScheme} from "@/hooks/useColorScheme";
 
 
 const preview: Preview = {
