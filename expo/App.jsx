@@ -1,3 +1,4 @@
+import Constants from "expo-constants";
 import { StyleSheet, Text, View } from "react-native";
 
 const App = () => {
@@ -8,15 +9,20 @@ const App = () => {
   );
 };
 
-// let EntryPoint;
+let EntryPoint;
 
-// if (process.env.STORYBOOK_ENABLED) {
-//   EntryPoint = require("./storybook");
-// } else {
-//   EntryPoint = App;
-// }
+console.log(
+  "Storybook enabled value:",
+  Constants.expoConfig.extra.storybookEnabled
+);
 
-export default App;
+if (Constants.expoConfig.extra.storybookEnabled) {
+  EntryPoint = require("../.rnstorybook").default;
+} else {
+  EntryPoint = App;
+}
+
+export default EntryPoint;
 
 const styles = StyleSheet.create({
   container: {
