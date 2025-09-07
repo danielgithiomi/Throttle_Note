@@ -24,6 +24,9 @@
         "./components/molecules/*"
       ],
       // With Indexes
+      "@hooks": [
+        "./packages/hooks/index"
+      ],
       "@libs": [
         "./packages/libs/index"
       ],

@@ -1,10 +1,9 @@
-import { cn } from "@libs";
+import {cn} from "@libs";
 import {FC, useMemo} from "react";
 import {Text} from "react-native";
 import {Colors} from "@constants";
-import {TNTextProps} from "@tn/atoms/TNText";
-import {VariantClassMap} from "./TNText.types";
 import {useAppTheme} from "@tn/hooks/useAppTheme";
+import {TNTextProps, VariantClassMap} from "@tn/atoms/TNText";
 
 export const TNText: FC<TNTextProps> = ({style, variant = "default", textColor, children, className, ...props}) => {
 

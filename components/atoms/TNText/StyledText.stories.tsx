@@ -1,12 +1,11 @@
 import React from "react";
-import {StyledText} from "./StyledText";
-import {StyledTextProps} from "./StyledText.types";
-import {Meta, StoryFn} from "@storybook/react-native";
 import {View} from "react-native";
+import {Meta, StoryFn} from "@storybook/react-native";
+import {TNText, TNTextProps} from '@tn/atoms/TNText';
 
-const StyledTextMeta: Meta<typeof StyledText> = {
+const StyledTextMeta: Meta<typeof TNText> = {
     title: "Atoms/StyledText",
-    component: StyledText,
+    component: TNText,
     argTypes: {
         children: {
             control: "text",
@@ -18,9 +17,9 @@ const StyledTextMeta: Meta<typeof StyledText> = {
 
 export default StyledTextMeta;
 
-const Template: StoryFn<typeof StyledText> = (args: StyledTextProps) => (
+const Template: StoryFn<typeof TNText> = (args: TNTextProps) => (
     <View className="flex-1 h-full bg-red-600 items-center justify-center">
-        <StyledText {...args} />
+        <TNText {...args} />
     </View>
 );
 
