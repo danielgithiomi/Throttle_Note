@@ -11,7 +11,7 @@ export default ({ config }) => ({
   newArchEnabled: true,
   extra: {
     minSplashScreenDuration: 2000,
-    storybookEnabled: process.env.STORYBOOK_ENABLED,
+    storybookEnabled: process.env.STORYBOOK_ENABLED === 'true',
   },
   ios: {
     supportsTablet: true,
