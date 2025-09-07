@@ -1,5 +1,5 @@
 import Constants from "expo-constants";
-import { StyleSheet, Text, View } from "react-native";
+import {StyleSheet, Text, View} from "react-native";
 
 const App = () => {
   return (
@@ -10,11 +10,6 @@ const App = () => {
 };
 
 let EntryPoint;
-
-console.log(
-  "Storybook enabled value:",
-  Constants.expoConfig.extra.storybookEnabled
-);
 
 if (Constants.expoConfig.extra.storybookEnabled) {
   EntryPoint = require("../.rnstorybook").default;
