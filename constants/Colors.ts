@@ -1,7 +1,7 @@
 const tertiaryColor = "#d1495b";
 const accentColor = "#f3de2c";
 const tintColorLight = "#0a7ea4";
-const tintColorDark = "#004560";
+const tintColorDark = "#fff";
 
 export const Colors = {
     light: {
