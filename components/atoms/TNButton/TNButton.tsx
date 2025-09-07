@@ -3,7 +3,7 @@ import {Colors} from "@/constants";
 import {cn} from "@/packages/libs";
 import {useAppTheme} from "@tn/hooks/useAppTheme";
 import {Text, TouchableOpacity} from "react-native";
-import {ButtonPadding, ButtonRounded, ButtonVariant, ContentPosition, TNButtonProps} from "@tn/atoms/TNButton";
+import {ButtonPadding, ButtonRounded, ButtonVariant, ContentPosition, TNButtonProps} from "./TNButton.types";
 
 export const TNButton: FC<TNButtonProps> = ({
                                                 id,
