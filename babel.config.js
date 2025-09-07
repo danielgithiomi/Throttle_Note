@@ -16,6 +16,7 @@ module.exports = function (api) {
                     '@tn/atoms': './components/atoms',
                     '@tn/molecules': './components/molecules',
                     // With Indexes
+                    '@hooks': './packages/hooks/index',
                     '@libs': './packages/libs/index',
                     '@atoms': './components/atoms/index',
                     '@molecules': './components/molecules/index',
