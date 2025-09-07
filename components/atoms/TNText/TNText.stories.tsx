@@ -1,7 +1,7 @@
 import React from "react";
 import {View} from "react-native";
-import {Meta, StoryFn} from "@storybook/react-native";
 import {TNText, TNTextProps} from '@tn/atoms/TNText';
+import {Meta, StoryFn} from "@storybook/react-native";
 
 const StyledTextMeta: Meta<typeof TNText> = {
     title: "Atoms/StyledText",
