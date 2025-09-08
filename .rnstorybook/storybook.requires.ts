@@ -39,6 +39,7 @@ global.STORIES = normalizedStories;
 module?.hot?.accept?.();
 
 
+
 if (!global.view) {
     global.view = start({
         annotations,
